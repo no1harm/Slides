@@ -1,0 +1,71 @@
+body,h1,h2,h3,p,quote,small,form,input,ul,li,ol,label{
+    /* Page reset */
+    margin:0px;
+    padding:0px;
+}
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+body{
+    /* Setting default text color, background and a font stack */
+    color:#444444;
+    font-size:13px;
+    background: #f2f2f2;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body {
+    text-align: center;
+}
+.main {
+    width: 960px;
+    margin: 0 auto;
+}
+.slidesWrapper{
+    width:960px;
+    border:1px solid #ddd;
+    overflow: hidden;
+    border-radius: 0 0 5px 5px;
+}
+.slides {
+    display: flex;
+    transition: all 1s;
+}
+.slides img{
+    width: 100%;
+}
+.menu{
+    margin: 0 auto;
+    /* background-color: red; */
+}
+.menu ul {
+    display: inline-block;
+    list-style: none;
+}
+.menu ul li{
+    float: left;
+    white-space: nowrap;
+    padding: 16px 18px;
+    border:1px solid rgb(221, 219, 219);
+    position: relative;
+}
+.menu ul li a {
+    cursor: default;
+}
+.triangle {
+    position: absolute;
+    display: block;
+    width: 0px;
+    border-top: 8px solid white;
+    border-left:solid 8px transparent;
+    border-right:solid 8px transparent;
+    border-bottom:solid 8px transparent;
+    box-shadow: 0px 11px 10px -11px rgba(153,153,153,1);
+    left: 26px;
+    top: 0px;
+}
+.liClass{
+    box-shadow: inset 0px 0px 34px 1px rgba(153,153,153,0.6);
+}
