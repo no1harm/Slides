@@ -43,16 +43,19 @@ body {
 .menu ul {
     display: inline-block;
     list-style: none;
+    vertical-align: top;
 }
 .menu ul li{
     float: left;
     white-space: nowrap;
     padding: 16px 18px;
     border:1px solid rgb(221, 219, 219);
+    border-top: 1px solid white;
     position: relative;
+    cursor: pointer;
 }
 .menu ul li a {
-    cursor: default;
+    /* cursor: default; */
 }
 .triangle {
     position: absolute;
