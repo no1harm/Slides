@@ -8,7 +8,30 @@ body,h1,h2,h3,p,quote,small,form,input,ul,li,ol,label{
 	display: block;
 	clear: both;
 }
-
+h1:nth-child(1) {
+    font-family: "Myriad Pro",Arial,Helvetica,sans-serif;
+    font-size: 42px;
+    font-weight: normal;
+    padding: 35px 0 5px;
+}
+strong, b {
+    font-weight: bold;
+}
+h2 {
+    font-family: "Myriad Pro",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    position: relative;
+}
+h2 a {
+    text-decoration: none;
+}
+p a {
+    text-decoration: bisque;
+}
+p:last-child{
+    margin-bottom: 20px;
+}
 body{
     /* Setting default text color, background and a font stack */
     color:#444444;
@@ -25,9 +48,12 @@ body {
 }
 .slidesWrapper{
     width:960px;
-    border:1px solid #ddd;
+    /* border:1px solid #ddd; */
     overflow: hidden;
     border-radius: 0 0 5px 5px;
+    box-shadow:0 0 3px #AAAAAA;
+    border:1px solid white;
+    margin: 35px 0 35px;
 }
 .slides {
     display: flex;
@@ -39,6 +65,11 @@ body {
 .menu{
     margin: 0 auto;
     /* background-color: red; */
+    background: #f2f2f2;
+    background: -moz-linear-gradient(top, #f2f2f2 1%, #ffffff 27%, #ffffff 53%, #eaeaea 100%);
+    background: -webkit-linear-gradient(top, #f2f2f2 1%,#ffffff 27%,#ffffff 53%,#eaeaea 100%);
+    background: linear-gradient(to bottom, #f2f2f2 1%,#ffffff 27%,#ffffff 53%,#eaeaea 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#eaeaea',GradientType=0 );
 }
 .menu ul {
     display: inline-block;
