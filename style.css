@@ -85,9 +85,6 @@ body {
     position: relative;
     cursor: pointer;
 }
-.menu ul li a {
-    /* cursor: default; */
-}
 .triangle {
     position: absolute;
     display: block;

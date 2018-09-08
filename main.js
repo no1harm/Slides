@@ -50,18 +50,21 @@ let timerId = setTimer()
 
 function setTimer() {
     return setInterval(() => {
-        $li.eq(n % size).trigger('click')
         n += 1
+        $li.eq(n % size).trigger('click')
     }, 3000)
 }
 
 // 当鼠标移入
-$('#slides').on('mouseenter',function(){
+/* 注意这里！监听的对象！
+   如果是#slides将会引发bug，点击按钮所触发的动画会和setInterval()触发的动画会发生冲突
+ */
+$('#slidesWrapper').on('mouseenter',function(){
     window.clearInterval(timerId)
 })
 
 // 当鼠标移出
-$('#slides').on('mouseleave',function(){
+$('#slidesWrapper').on('mouseleave',function(){
     timerId = setTimer()
 })
 
